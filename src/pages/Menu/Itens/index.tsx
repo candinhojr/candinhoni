@@ -22,14 +22,21 @@ export default function Itens({ search, filter, ordenator }: Props) {
     return true;
   }
 
+  const handleOrder = (
+    newList: typeof itens,
+    property: keyof Pick<typeof itens[0], "size" | "serving" | "price">
+  ) => {
+    return newList.sort((a, b) => (a[property] > b[property] ? 1 : -1));
+  };
+
   function order(newList: typeof itens) {
     switch (ordenator) {
       case "porcao":
-        return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
+        return handleOrder(newList, "size");
       case "qtd_pessoas":
-        return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+        return handleOrder(newList, "serving");
       case "preco":
-        return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
+        return handleOrder(newList, "price");
 
       default:
         return newList;

@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 import { ReactComponent as Logo } from "assets/logo.svg";
+import styles from "./Menu.module.scss";
 import Search from "./Search";
 import Filters from "./Filters";
-import styles from "./Menu.module.scss";
 import Ordenator from "./Ordenator";
+import Itens from "./Itens";
 
 export default function Menu() {
   const [search, setSearch] = useState("");
@@ -25,6 +26,7 @@ export default function Menu() {
         <div className={styles.menu__filters}>
           <Filters filter={filter} setFilter={setFilter} />
           <Ordenator ordenator={ordenator} setOrdenator={setOrdenator} />
+          <Itens />
         </div>
       </section>
     </main>

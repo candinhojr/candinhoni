@@ -9,9 +9,8 @@ interface Props {
   ordenator: string;
 }
 
-export default function Itens(props: Props) {
+export default function Itens({ search, filter, ordenator }: Props) {
   const [list, setList] = useState(itens);
-  const { search, filter } = props;
 
   function handleSearch(title: string) {
     const regex = new RegExp(search, "i");
@@ -23,12 +22,26 @@ export default function Itens(props: Props) {
     return true;
   }
 
+  function order(newList: typeof itens) {
+    switch (ordenator) {
+      case "porcao":
+        return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
+      case "qtd_pessoas":
+        return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+      case "preco":
+        return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
+
+      default:
+        return newList;
+    }
+  }
+
   useEffect(() => {
     const newList = itens.filter(
       (item) => handleSearch(item.title) && handleFilter(item.category.id)
     );
-    setList(newList);
-  }, [search, filter]);
+    setList(order(newList));
+  }, [search, filter, ordenator]);
 
   return (
     <div className={styles.itens}>

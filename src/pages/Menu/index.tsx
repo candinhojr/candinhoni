@@ -26,7 +26,7 @@ export default function Menu() {
         <div className={styles.menu__filters}>
           <Filters filter={filter} setFilter={setFilter} />
           <Ordenator ordenator={ordenator} setOrdenator={setOrdenator} />
-          <Itens />
+          <Itens search={search} filter={filter} ordenator={ordenator} />
         </div>
       </section>
     </main>

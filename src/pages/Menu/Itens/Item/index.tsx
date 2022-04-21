@@ -1,15 +1,16 @@
+import classNames from "classnames";
+
 import styles from "./Item.module.scss";
-import logo from "assets/logo.svg";
 import itens from "../itens.json";
 
 type Props = typeof itens[0];
 
 export default function Item(props: Props) {
-  const { title, description, price, category, size, serving } = props;
+  const { title, description, category, size, serving, price, photo } = props;
   return (
     <div className={styles.item}>
       <div className={styles.item__image}>
-        <img src={logo} alt={title} />
+        <img src={photo} alt={title} />
       </div>
       <div className={styles.item__description}>
         <div className={styles.item__title}>
@@ -18,7 +19,14 @@ export default function Item(props: Props) {
         </div>
       </div>
       <div className={styles.item__tags}>
-        <div className={styles.item__tipo}>{category.label}</div>
+        <div
+          className={classNames({
+            [styles.item__tipo]: true,
+            [styles[`item__tipo__${category.label.toLocaleLowerCase()}`]]: true,
+          })}
+        >
+          {category.label}
+        </div>
         <div className={styles.item__porcao}>{size}g</div>
         <div className={styles.item__qtdpessoas}>
           Serve {serving} pessoa{serving === 1 ? "" : "s"}

@@ -22,7 +22,7 @@ export default function Filters({ filter, setFilter }: Props) {
         <button
           className={classNames({
             [styles.filters__filter]: true,
-            [styles["filters__filter--ativo"]]: filter === option.id,
+            [styles["filters__filter--active"]]: filter === option.id,
           })}
           key={option.id}
           onClick={() => handleFilterSelection(option)}

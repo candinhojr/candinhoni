@@ -4,6 +4,7 @@ import { ReactComponent as Logo } from "assets/logo.svg";
 import Search from "./Search";
 import Filters from "./Filters";
 import styles from "./Menu.module.scss";
+import Ordenator from "./Ordenator";
 
 export default function Menu() {
   const [search, setSearch] = useState("");
@@ -22,6 +23,7 @@ export default function Menu() {
         <Search search={search} setSearch={setSearch} />
         <div className={styles.menu__filters}>
           <Filters filter={filter} setFilter={setFilter} />
+          <Ordenator />
         </div>
       </section>
     </main>

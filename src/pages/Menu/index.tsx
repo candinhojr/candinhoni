@@ -4,13 +4,13 @@ import { ReactComponent as Logo } from "assets/logo.svg";
 import styles from "./Menu.module.scss";
 import Search from "./Search";
 import Filters from "./Filters";
-import Ordenator from "./Ordenator";
+import Ordenator, { OrdenatorOptions } from "./Ordenator";
 import Itens from "./Itens";
 
 export default function Menu() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<number | null>(null);
-  const [ordenator, setOrdenator] = useState("");
+  const [ordenator, setOrdenator] = useState<OrdenatorOptions>("");
 
   return (
     <main>

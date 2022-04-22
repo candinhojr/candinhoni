@@ -5,9 +5,11 @@ import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 import styles from "./Ordenator.module.scss";
 import choices from "./choices.json";
 
+export type OrdenatorOptions = "" | "porcao" | "qtd_pessoas" | "preco";
+
 interface Props {
-  ordenator: string;
-  setOrdenator: React.Dispatch<React.SetStateAction<string>>;
+  ordenator: OrdenatorOptions;
+  setOrdenator: React.Dispatch<React.SetStateAction<OrdenatorOptions>>;
 }
 
 export default function Ordenator({ ordenator, setOrdenator }: Props) {
@@ -40,7 +42,7 @@ export default function Ordenator({ ordenator, setOrdenator }: Props) {
           <div
             className={styles.ordenator__option}
             key={option.value}
-            onClick={() => setOrdenator(option.value)}
+            onClick={() => setOrdenator(option.value as OrdenatorOptions)}
           >
             {option.name}
           </div>

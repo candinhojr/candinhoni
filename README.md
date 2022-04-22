@@ -1,10 +1,31 @@
-# Sobre o projeto
+![Logo](https://github.com/candinhojr/candinhoni/blob/master/src/assets/logo.svg)
 
-Este projeto foi feito com base no que aprendi no curso "**_React: lidando com arquivos estáticos_**" do Alura. Este curso faz parte da formação "**_React com Typescript_**".
+# Candinhoni
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/candinhojr/candinhoni/blob/master/LICENSE)
+
+## :bookmark_tabs: Menu
+
+- [Sobre o projeto](#scroll-sobre-o-projeto)
+- [Screenshot](#rice_scene-screenshot)
+- [O que foi abordado no curso](#blue_book-o-que-foi-abordado-no-curso)
+- [Instalação e uso](#floppy_disk-instalação-e-uso)
+- [Licença](#memo-licença)
+- [Autor](#smiley_cat-autor)
+
+## :scroll: Sobre o projeto
+
+Projeto com objetivo de disponibilizar o cardápio de um restaurante, possibilitando ao usuário _buscas_ de pratos, _aplicar filtros_ e _ordenação_ aos resultados.
+
+Este projeto foi feito com base no que aprendi no curso [React: lidando com arquivos estáticos](https://cursos.alura.com.br/course/react-arquivos-estaticos) do Alura. Este curso faz parte da formação [React com Typescript](https://cursos.alura.com.br/formacao-react-ts).
+
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
+
+## :rice_scene: Screenshot
 
 ![Gif projeto Candinhoni](https://github.com/candinhojr/candinhoni/blob/master/Candinhoni.gif)
 
-## O que foi abordado no curso
+## :blue_book: O que foi abordado no curso
 
 Abaixo, os temas abordados
 
@@ -66,49 +87,44 @@ Abaixo, os temas abordados
 - Tipar o `useState`
   - Escrever `useState<Tipo>` para tipar o `state` e o `setState`.
 
-# Getting Started with Create React App
+## :floppy_disk: Instalação e uso
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+```
+git clone https://github.com/candinhojr/candinhoni
+```
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento.
+Acesse [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Dependencias e bibliotecas
 
-### `npm test`
+- [React](https://pt-br.reactjs.org/docs/create-a-new-react-app.html)
+- [Typescript](https://www.typescriptlang.org/pt/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Normalize.css](https://necolas.github.io/normalize.css/)
+- [Classnames](https://github.com/JedWatson/classnames#readme)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Estrutura de pastas
 
-### `npm run build`
+```
+.
+├── public # Public files
+├── src # Project source code
+├── .gitignore
+├── package.json
+├── LICENSE
+├── README.md
+└── tsconfig.json
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :memo: Licença
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The [MIT License](https://github.com/candinhojr/candinhoni/blob/master/LICENSE) (MIT)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :smiley_cat: Autor
 
-### `npm run eject`
+- [@candinhojr](https://candinhojr.github.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com ❤️

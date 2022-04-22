@@ -2,6 +2,8 @@
 
 Este projeto foi feito com base no que aprendi no curso "**_React: lidando com arquivos estáticos_**" do Alura. Este curso faz parte da formação "**_React com Typescript_**".
 
+![Gif projeto Candinhoni](https://github.com/candinhojr/candinhoni/blob/master/Candinhoni.gif)
+
 ## O que foi abordado no curso
 
 Abaixo, os temas abordados

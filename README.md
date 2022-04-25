@@ -9,8 +9,8 @@
 - [Sobre o projeto](#scroll-sobre-o-projeto)
 - [Screenshot](#rice_scene-screenshot)
 - [O que foi abordado nos cursos](#blue_book-o-que-foi-abordado-nos-cursos)
-  - [React: lidando com arquivos estáticos](#react:-lidando-com-arquivos-estáticos)
-  - [React: conhecendo a biblioteca React Router](#react:-conhecendo-a-biblioteca-react-router)
+  - [React: lidando com arquivos estáticos](#react-lidando-com-arquivos-estáticos)
+  - [React: conhecendo a biblioteca React Router](#react-conhecendo-a-biblioteca-react-router)
 - [Instalação e uso](#floppy_disk-instalação-e-uso)
 - [Licença](#memo-licença)
 - [Autor](#smiley_cat-autor)
@@ -102,6 +102,12 @@ Abaixo, os temas abordados nos cursos [React: lidando com arquivos estáticos](h
 
 #### Aula 2 - Estrutura básica do Router DOM
 
+- Separar os dados do cardápio para uma pasta separada;
+- BrowserRouter e HashRouter;
+  - Diferença entre BrowserRouter e HashRouter.
+- Routes;
+  - Utilizar o routes para alternar entre rotas.
+
 ## :floppy_disk: Instalação e uso
 
 ```
@@ -127,10 +133,12 @@ Acesse [http://localhost:3000](http://localhost:3000) para visualizá-lo no nave
 .
 ├── public # Public files
 ├── src # Project source code
+├── .eslintrc.json
 ├── .gitignore
-├── package.json
+├── Candinhoni.gif
 ├── LICENSE
 ├── README.md
+├── package.json
 └── tsconfig.json
 ```
 
@@ -142,4 +150,4 @@ The [MIT License](https://github.com/candinhojr/candinhoni/blob/master/LICENSE) 
 
 - [@candinhojr](https://candinhojr.github.io/)
 
-Feito com ❤️
+Feito com :heart: e com bastante :coffee:

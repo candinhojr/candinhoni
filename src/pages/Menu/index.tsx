@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { ReactComponent as Logo } from "assets/logo.svg";
-import styles from "./Menu.module.scss";
-import Search from "./Search";
-import Filters from "./Filters";
-import Ordenator, { OrdenatorOptions } from "./Ordenator";
-import Itens from "./Itens";
+import { ReactComponent as Logo } from 'assets/logo.svg';
+import styles from './Menu.module.scss';
+import Search from './Search';
+import Filters from './Filters';
+import Ordenator, { OrdenatorOptions } from './Ordenator';
+import Itens from './Itens';
 
 export default function Menu() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [filter, setFilter] = useState<number | null>(null);
-  const [ordenator, setOrdenator] = useState<OrdenatorOptions>("");
+  const [ordenator, setOrdenator] = useState<OrdenatorOptions>('');
 
   return (
     <main>

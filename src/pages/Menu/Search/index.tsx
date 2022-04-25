@@ -1,6 +1,6 @@
-import React from "react";
-import { CgSearch } from "react-icons/cg";
-import styles from "./Search.module.scss";
+import React from 'react';
+import { CgSearch } from 'react-icons/cg';
+import styles from './Search.module.scss';
 
 interface Props {
   search: string;

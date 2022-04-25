@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import classNames from "classnames";
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import React, { useState } from 'react';
+import classNames from 'classnames';
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 
-import styles from "./Ordenator.module.scss";
-import choices from "./choices.json";
+import styles from './Ordenator.module.scss';
+import choices from './choices.json';
 
-export type OrdenatorOptions = "" | "porcao" | "qtd_pessoas" | "preco";
+export type OrdenatorOptions = '' | 'porcao' | 'qtd_pessoas' | 'preco';
 
 interface Props {
   ordenator: OrdenatorOptions;
@@ -21,12 +21,12 @@ export default function Ordenator({ ordenator, setOrdenator }: Props) {
     <button
       className={classNames({
         [styles.ordenator]: true,
-        [styles["ordenator--active"]]: ordenator !== "",
+        [styles['ordenator--active']]: ordenator !== '',
       })}
       onClick={() => setOpen(!open)}
       onBlur={() => setOpen(false)}
     >
-      <span>{ordenatorName || "Ordenar Por"}</span>
+      <span>{ordenatorName || 'Ordenar Por'}</span>
       {open ? (
         <MdKeyboardArrowUp size={20} />
       ) : (
@@ -35,7 +35,7 @@ export default function Ordenator({ ordenator, setOrdenator }: Props) {
       <div
         className={classNames({
           [styles.ordenator__options]: true,
-          [styles["ordenator__options--active"]]: open,
+          [styles['ordenator__options--active']]: open,
         })}
       >
         {choices.map((option) => (

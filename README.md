@@ -8,7 +8,9 @@
 
 - [Sobre o projeto](#scroll-sobre-o-projeto)
 - [Screenshot](#rice_scene-screenshot)
-- [O que foi abordado no curso](#blue_book-o-que-foi-abordado-no-curso)
+- [O que foi abordado nos cursos](#blue_book-o-que-foi-abordado-nos-cursos)
+  - [React: lidando com arquivos estáticos](#react:-lidando-com-arquivos-estáticos)
+  - [React: conhecendo a biblioteca React Router](#react:-conhecendo-a-biblioteca-react-router)
 - [Instalação e uso](#floppy_disk-instalação-e-uso)
 - [Licença](#memo-licença)
 - [Autor](#smiley_cat-autor)
@@ -17,7 +19,7 @@
 
 Projeto com objetivo de disponibilizar o cardápio de um restaurante, possibilitando ao usuário _buscas_ de pratos, _aplicar filtros_ e _ordenação_ aos resultados.
 
-Este projeto foi feito com base no que aprendi no curso [React: lidando com arquivos estáticos](https://cursos.alura.com.br/course/react-arquivos-estaticos) do Alura. Este curso faz parte da formação [React com Typescript](https://cursos.alura.com.br/formacao-react-ts).
+Este projeto foi feito com base no que aprendi nos cursos [React: lidando com arquivos estáticos](https://cursos.alura.com.br/course/react-arquivos-estaticos) e [React: conhecendo a biblioteca React Router](https://cursos.alura.com.br/course/react-biblioteca-react-router) do Alura. Estes cursos fazem parte da formação [React com Typescript](https://cursos.alura.com.br/formacao-react-ts).
 
 Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
@@ -25,18 +27,20 @@ Este projeto foi inicializado com [Create React App](https://github.com/facebook
 
 ![Gif projeto Candinhoni](https://github.com/candinhojr/candinhoni/blob/master/Candinhoni.gif)
 
-## :blue_book: O que foi abordado no curso
+## :blue_book: O que foi abordado nos cursos
 
-Abaixo, os temas abordados
+Abaixo, os temas abordados nos cursos [React: lidando com arquivos estáticos](https://cursos.alura.com.br/course/react-arquivos-estaticos) (6 aulas) e [React: conhecendo a biblioteca React Router](https://cursos.alura.com.br/course/react-biblioteca-react-router) (6 aulas)
 
-### Aula 1 - Criando o projeto
+### [React: lidando com arquivos estáticos](https://cursos.alura.com.br/course/react-arquivos-estaticos)
+
+#### Aula 1 - Criando o projeto
 
 - Criar projetos usando Create React App;
 - Vimos como podemos usar templates, como `typescript` para criar projetos com CRA e depois removemos o que não será utilizado neste projeto;
 - Usar CSS Modules com TypeScript e Sass;
 - Aplicamos estilos escritos em Sass via CSS Modules e adicionamos a capacidade do Visual Studio Code oferecer autocomplete dos módulos de estilos com `typescript-plugin-css-modules`.
 
-### Aula 2 - Assets
+#### Aula 2 - Assets
 
 - Importar um svg;
   - Vimos como o webpack entende aquela string que fornecemos ao **src** da tag img e porque não funciona, então, aprendemos como importar um svg da forma correta.
@@ -47,7 +51,7 @@ Abaixo, os temas abordados
 - Utilizar a biblioteca reset css para resetar o css;
   - Resetamos os estilos da nossa página utilizando uma biblioteca chamada **reset.css** que nos ajuda a limpar os estilos padrões de cada elemento de acordo com cada navegador.
 
-### Aula 3 - Header e buscador
+#### Aula 3 - Header e buscador
 
 - Importar fontes externas
   - Aprendemos como importar fontes externas no nosso projeto utilizando o google fonts.
@@ -60,7 +64,7 @@ Abaixo, os temas abordados
 - Criar variáveis css
   - Criamos variáveis css para nos auxiliar na padronização dos estilos da página, evitando repetição e facilitando na manutenção de código.
 
-### Aula 4 - Ordenação e filtros
+#### Aula 4 - Ordenação e filtros
 
 - Inferir o tipo de um objeto
   - O operador `typeof` nos permite inferir a tipagem de um objeto sem a necessidade de criar uma interface.
@@ -69,7 +73,7 @@ Abaixo, os temas abordados
 - Biblioteca **classnames**
   - Essa biblioteca nos permite concatenar classes CSS utilizando sintaxe de objetos.
 
-### Aula 5 - Lista de itens
+#### Aula 5 - Lista de itens
 
 - Renderizar uma lista de componentes
   - Podemos utilizar o _spread operator_ para não precisar passar as _props_ manualmente quando temos total controle do componente.
@@ -78,7 +82,7 @@ Abaixo, os temas abordados
 - Gerar os arquivos utilizados em produção
   - Com o comando `npm run build` podemos verificar quais arquivos estarão presentes no ambiente de produção.
 
-### Aula 6 - Finalizando o projeto
+#### Aula 6 - Finalizando o projeto
 
 - Buscar com expressão regular
   - Utilizar expressões regulares em buscas de textos.
@@ -86,6 +90,17 @@ Abaixo, os temas abordados
   - Alterar a quantidade ou ordenar os elementos de uma lista com métodos `filter` e `sort`.
 - Tipar o `useState`
   - Escrever `useState<Tipo>` para tipar o `state` e o `setState`.
+
+### [React: conhecendo a biblioteca React Router](https://cursos.alura.com.br/course/react-biblioteca-react-router)
+
+#### Aula 1 - O que é SPA?
+
+- ESLint;
+  - O que é e como configurar o ESLint.
+- Como corrigir erros de código seguindo as regras da configuração;
+- Criar a página de início da aplicação.
+
+#### Aula 2 - Estrutura básica do Router DOM
 
 ## :floppy_disk: Instalação e uso
 

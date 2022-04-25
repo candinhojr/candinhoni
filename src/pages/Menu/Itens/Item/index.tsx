@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 
 import styles from './Item.module.scss';
-import itens from '../itens.json';
+import menu from 'data/menu.json';
 
-type Props = typeof itens[0];
+type Props = typeof menu[0];
 
 export default function Item(props: Props) {
   const { title, description, category, size, serving, price, photo } = props;

@@ -1,4 +1,4 @@
-import itens from './itens.json';
+import menu from 'data/menu.json';
 import styles from './Itens.module.scss';
 import Item from './Item';
 import { useEffect, useState } from 'react';
@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function Itens({ search, filter, ordenator }: Props) {
-  const [list, setList] = useState(itens);
+  const [list, setList] = useState(menu);
 
   function handleSearch(title: string) {
     const regex = new RegExp(search, 'i');
@@ -23,28 +23,28 @@ export default function Itens({ search, filter, ordenator }: Props) {
   }
 
   const handleOrder = (
-    newList: typeof itens,
-    property: keyof Pick<typeof itens[0], 'size' | 'serving' | 'price'>
+    newList: typeof menu,
+    property: keyof Pick<typeof menu[0], 'size' | 'serving' | 'price'>
   ) => {
     return newList.sort((a, b) => (a[property] > b[property] ? 1 : -1));
   };
 
-  function order(newList: typeof itens) {
+  function order(newList: typeof menu) {
     switch (ordenator) {
-    case 'porcao':
-      return handleOrder(newList, 'size');
-    case 'qtd_pessoas':
-      return handleOrder(newList, 'serving');
-    case 'preco':
-      return handleOrder(newList, 'price');
+      case 'porcao':
+        return handleOrder(newList, 'size');
+      case 'qtd_pessoas':
+        return handleOrder(newList, 'serving');
+      case 'preco':
+        return handleOrder(newList, 'price');
 
-    default:
-      return newList;
+      default:
+        return newList;
     }
   }
 
   useEffect(() => {
-    const newList = itens.filter(
+    const newList = menu.filter(
       (item) => handleSearch(item.title) && handleFilter(item.category.id)
     );
     setList(order(newList));

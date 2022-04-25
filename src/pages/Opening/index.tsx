@@ -1,8 +1,25 @@
+import menu from 'data/menu.json';
+import styles from './Opening.module.scss';
+
 export default function Opening() {
+  let recommendedDishes = [...menu];
+  recommendedDishes = recommendedDishes
+    .sort(() => 0.5 - Math.random())
+    .splice(0, 3);
+
   return (
     <section>
-      <h3>Recomendações da cozinha</h3>
-      <div></div>
+      <h3 className={styles.title}>Recomendações da cozinha</h3>
+      <div className={styles.recommended}>
+        {recommendedDishes.map((item) => (
+          <div key={item.id}>
+            <div className={styles.recommended__image}>
+              <img src={item.photo} alt={item.title} />
+            </div>
+            <button className={styles.recommended__button}>Ver mais</button>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

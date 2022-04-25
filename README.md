@@ -108,6 +108,13 @@ Abaixo, os temas abordados nos cursos [React: lidando com arquivos estáticos](h
 - Routes;
   - Utilizar o routes para alternar entre rotas.
 
+#### Aula 3 - Criando as rotas
+
+- Reutilizar o menu;
+- Reaproveitar o header utilizando o react-router-dom;
+- Utilizar o componente Link;
+- Fazer a página padrão.
+
 ## :floppy_disk: Instalação e uso
 
 ```
@@ -126,6 +133,7 @@ Acesse [http://localhost:3000](http://localhost:3000) para visualizá-lo no nave
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Normalize.css](https://necolas.github.io/normalize.css/)
 - [Classnames](https://github.com/JedWatson/classnames#readme)
+- [React Router DOM](https://github.com/remix-run/react-router/tree/main/packages/react-router-dom#readme)
 
 ### Estrutura de pastas
 

@@ -115,6 +115,13 @@ Abaixo, os temas abordados nos cursos [React: lidando com arquivos estáticos](h
 - Utilizar o componente Link;
 - Fazer a página padrão.
 
+#### Aula 4 - Router DOM Hooks
+
+- Desenvolver um tema para a aplicação;
+- Aplicar o componente Outlet do react-router-dom;
+- Utilizar o hook _useNavigate_ para navegar entre rotas;
+- Criar uma tela not found para páginas não encontradas.
+
 ## :floppy_disk: Instalação e uso
 
 ```
